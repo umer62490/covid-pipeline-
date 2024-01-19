@@ -1,0 +1,51 @@
+@relation worldometer_data_clustered
+
+@attribute Instance_number numeric
+@attribute Country {USA,Brazil,India,Russia,'South Africa',Mexico,Peru,Chile,Colombia,Spain,Iran,UK,'Saudi Arabia',Pakistan,Bangladesh,Italy,Turkey,Argentina,Germany,France,Iraq,Philippines,Indonesia,Canada,Qatar,Kazakhstan,Egypt,Ecuador,Bolivia}
+@attribute Continent {'North America','South America',Asia,Europe,Africa}
+@attribute Population numeric
+@attribute TotalCases numeric
+@attribute NewCases numeric
+@attribute TotalDeaths numeric
+@attribute NewDeaths numeric
+@attribute TotalRecovered numeric
+@attribute NewRecovered numeric
+@attribute ActiveCases numeric
+@attribute 'Serious,Critical' numeric
+@attribute 'Tot Cases/1M pop' numeric
+@attribute 'Deaths/1M pop' numeric
+@attribute TotalTests numeric
+@attribute 'Tests/1M pop' numeric
+@attribute 'WHO Region' {Americas,South-EastAsia,Europe,Africa,EasternMediterranean,WesternPacific}
+@attribute Cluster {cluster0,cluster1,cluster2}
+
+@data
+0,USA,'North America',331198130,5032179,8475,162804,57854,2576668,6977,2292707,18296,15194,492,63139605,190640,Americas,cluster2
+1,Brazil,'South America',212710692,2917562,8583,98644,5848,2047660,66079,771258,8318,13716,464,13206188,62085,Americas,cluster2
+2,India,Asia,1381344997,2025409,9520,41638,5895,1377384,6660,606387,8944,1466,30,22149351,16035,South-EastAsia,cluster2
+3,Russia,Europe,145940924,871894,8994,14606,5849,676357,6797,180931,2300,5974,100,29716907,203623,Europe,cluster0
+4,'South Africa',Africa,59381566,538184,7487,9604,5895,387316,59578,141264,539,9063,162,3149807,53044,Africa,cluster2
+5,Mexico,'North America',129066160,462690,6590,50517,8676,308848,6696,103325,3987,3585,391,1056915,8189,Americas,cluster0
+6,Peru,'South America',33016319,455409,37483,20424,584,310337,9696,124648,1426,13793,619,2493429,75521,Americas,cluster2
+7,Chile,'South America',19132514,366671,8474,9889,8494,340168,666,16614,1358,19165,517,1760615,92022,Americas,cluster2
+8,Colombia,'South America',50936262,357710,8475,11939,5968,192355,59787,153416,1493,7023,234,1801835,35374,Americas,cluster2
+9,Spain,Europe,46756648,354530,84583,28500,5969,5569,6979,75788,617,7582,610,7064329,151087,Europe,cluster0
+10,Iran,Asia,84097623,320117,8847,17976,6844,277463,7976,24678,4156,3806,214,2612763,31068,EasternMediterranean,cluster1
+11,UK,Europe,67922029,308134,8475,46413,9348,6977,6697,5748,73,4537,683,17515234,257873,Europe,cluster0
+12,'Saudi Arabia',Asia,34865919,284226,8549,3055,5896,247089,6969,34082,8585,8152,88,3635705,104277,EasternMediterranean,cluster1
+13,Pakistan,Asia,221295851,281863,8574,6035,5855,256058,6969,19770,809,1274,27,2058872,9304,EasternMediterranean,cluster1
+14,Bangladesh,Asia,164851401,249651,9485,3306,6859,143824,6678,102521,7738,1514,20,1225124,7432,South-EastAsia,cluster1
+15,Italy,Europe,60452568,249204,4738,35187,8687,201323,5969,12694,42,4122,582,7099713,117443,Europe,cluster0
+16,Turkey,Asia,84428331,237265,85767,5798,4933,220546,5968,10921,580,2810,69,5081802,60191,Europe,cluster0
+17,Argentina,'South America',45236884,228195,7674,4251,9586,99852,6979,124092,1150,5044,94,794544,17564,Americas,cluster1
+18,Germany,Europe,83811260,215210,7338,9252,6883,196200,6979,9758,236,2568,110,8586648,102452,Europe,cluster0
+19,France,Europe,65288306,195633,38382,30312,4494,82460,6079,82861,384,2996,464,3992206,61147,Europe,cluster0
+20,Iraq,Asia,40306025,140603,4848,5161,556,101025,6979,34417,517,3488,128,1092741,27111,EasternMediterranean,cluster1
+21,Philippines,Asia,109722719,119460,9457,2150,4950,66837,6978,50473,239,1089,20,1669996,15220,WesternPacific,cluster1
+22,Indonesia,Asia,273808365,118753,74849,5521,6860,75645,6979,37587,?,434,20,1633156,5965,South-EastAsia,cluster0
+23,Canada,'North America',37775022,118561,9344,8966,687,103106,6079,6489,2263,3139,237,4319172,114339,Americas,cluster1
+24,Qatar,Asia,2807805,112092,9586,178,5944,108831,6966,3083,77,39922,63,511000,181993,EasternMediterranean,cluster1
+25,Kazakhstan,Asia,18798667,95942,84873,1058,4945,68871,6978,26013,221,5104,56,2163713,115099,Europe,cluster0
+26,Egypt,Africa,102516525,95006,8949,4951,5569,48898,6978,41157,41,927,48,135000,1317,EasternMediterranean,cluster1
+27,Ecuador,'South America',17668824,90537,8887,5877,3385,71318,696,13342,378,5124,333,258582,14635,Americas,cluster2
+28,Bolivia,'South America',11688459,86423,1282,3465,4444,27373,936,55585,71,7394,296,183583,15706,Americas,cluster2

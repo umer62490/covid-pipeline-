@@ -1,0 +1,60 @@
+@relation country_wise_latest_clustered
+
+@attribute Instance_number numeric
+@attribute Country/Region {Afghanistan,Albania,Algeria,Andorra,Angola,'Antigua and Barbuda',Argentina,Armenia,Australia,Austria,Azerbaijan,Bahamas,Bahrain,Bangladesh,Barbados,Belarus,Belgium,Belize,Benin,Bhutan,Bolivia,'Bosnia and Herzegovina',Botswana,Brazil,Brunei,Bulgaria,'Burkina Faso',Burma,Burundi,'Cabo Verde',Cambodia,Cameroon,Canada,'Central African Republic',Chad,Chile,China,Colombia,Comoros}
+@attribute Confirmed numeric
+@attribute Deaths numeric
+@attribute Recovered numeric
+@attribute Active numeric
+@attribute NewCases numeric
+@attribute NewDeaths numeric
+@attribute NewRecovered numeric
+@attribute 'Deaths / 100 Cases' numeric
+@attribute 'Recovered / 100 Cases' numeric
+@attribute 'Deaths / 100 Recovered' numeric
+@attribute 'Confirmed last week' numeric
+@attribute '1 week change' numeric
+@attribute '1 week \% increase' numeric
+@attribute 'WHO Region' {'Eastern Mediterranean',Europe,Africa,Americas,'Western Pacific','South-East Asia'}
+@attribute Cluster {cluster0,cluster1}
+
+@data
+0,Afghanistan,36263,1269,25198,9796,106,10,18,3.5,69.49,5.04,35526,737,2.07,'Eastern Mediterranean',cluster1
+1,Albania,4880,144,2745,1991,117,6,63,2.95,56.25,5.25,4171,709,17,Europe,cluster1
+2,Algeria,27973,1163,18837,7973,616,8,749,4.16,67.34,6.17,23691,4282,18.07,Africa,cluster1
+3,Andorra,907,52,803,52,10,67,78,5.73,88.53,6.48,884,2300,2.6,Europe,cluster1
+4,Angola,950,41,242,667,18,1,56,4.32,25.47,16.94,749,2000,26.84,Africa,cluster1
+5,'Antigua and Barbuda',86,90,65,18,4,60,5,3.49,75.58,4.62,769,1000,13.16,Americas,cluster1
+6,Argentina,167416,3059,72575,91782,4890,120,2057,1.83,43.35,4.21,130774,36642,28.02,Americas,cluster0
+7,Armenia,37390,711,26665,10014,73,6,187,1.9,71.32,2.67,34981,2409,6.89,Europe,cluster1
+8,Australia,15303,167,9311,5825,368,6,137,1.09,60.84,1.79,12428,2875,23.13,'Western Pacific',cluster1
+9,Austria,20558,713,18246,1599,86,1,37,3.47,88.75,3.91,19743,815,4.13,Europe,cluster1
+10,Azerbaijan,30446,423,23242,6781,396,6,558,1.39,76.34,1.82,27890,2556,9.16,Europe,cluster1
+11,Bahamas,382,120,91,280,40,60,900,2.88,23.82,12.09,174,208,119.54,Americas,cluster0
+12,Bahrain,39482,141,36110,3231,351,1,421,0.36,91.46,0.39,36936,2546,6.89,'Eastern Mediterranean',cluster1
+13,Bangladesh,226225,2965,125683,97577,2772,37,1801,1.31,55.56,2.36,207453,18772,9.05,'South-East Asia',cluster0
+14,Barbados,110,87,94,9,599,69,70,6.36,85.45,7.45,106,400,3.77,Americas,cluster1
+15,Belarus,67251,538,60492,6221,119,4,67,0.8,89.95,0.89,66213,1038,1.57,Europe,cluster1
+16,Belgium,66428,9822,17452,39154,402,1,14,14.79,26.27,56.28,64094,2334,3.64,Europe,cluster1
+17,Belize,48,200,26,20,60,49,80,4.17,54.17,7.69,400,230,20,Americas,cluster1
+18,Benin,1770,35,1036,699,67,80,50,1.98,58.53,3.38,1602,168,10.49,Africa,cluster1
+19,Bhutan,99,200,86,13,4,70,100,2,86.87,50,90,900,10,'South-East Asia',cluster1
+20,Bolivia,71181,2647,21478,47056,1752,64,309,3.72,30.17,12.32,60991,10190,16.71,Americas,cluster0
+21,'Bosnia and Herzegovina',10498,294,4930,5274,731,14,375,2.8,46.96,5.96,8479,2019,23.81,Europe,cluster1
+22,Botswana,739,210,63,674,53,1,11,0.27,8.53,3.17,522,217,41.57,Africa,cluster1
+23,Brazil,2442375,87618,1846641,508116,23284,614,33728,3.59,75.61,4.74,2118646,323729,15.28,Americas,cluster0
+24,Brunei,141,3,138,0,0,0,0,2.13,97.87,2.17,141,0,0,'Western Pacific',cluster1
+25,Bulgaria,10621,347,5585,4689,194,7,230,3.27,52.58,6.21,8929,1692,18.95,Europe,cluster1
+26,'Burkina Faso',1100,53,926,121,14,0,6,4.82,84.18,5.72,1065,35,3.29,Africa,cluster1
+27,Burma,350,6,292,52,67,67,2,1.71,83.43,2.05,341,9,2.64,'South-East Asia',cluster1
+28,Burundi,378,1,301,76,17,67,22,0.26,79.63,0.33,322,56,17.39,Africa,cluster1
+29,'Cabo Verde',2328,22,1550,756,21,56,103,0.95,66.58,1.42,2071,257,12.41,Africa,cluster1
+30,Cambodia,226,0,147,79,1,56,4,56,65.04,577,171,55,32.16,'Western Pacific',cluster1
+31,Cameroon,17110,391,14539,2180,402,6,67,2.29,84.97,2.69,16157,953,5.9,Africa,cluster1
+32,Canada,116458,8944,0,107514,682,11,56,7.68,56,55,112925,3533,3.13,Americas,cluster0
+33,'Central African Republic',4599,59,1546,2994,67,56,67,1.28,33.62,3.82,4548,51,1.12,Africa,cluster1
+34,Chad,922,75,810,37,7,67,657,8.13,87.85,9.26,889,33,3.71,Africa,cluster1
+35,Chile,347923,9187,319954,18782,2133,75,1859,2.64,91.96,2.87,333029,14894,4.47,Americas,cluster0
+36,China,86783,4656,78869,3258,213,4,7,5.37,90.88,5.9,85622,1161,1.36,'Western Pacific',cluster1
+37,Colombia,257101,8777,131161,117163,16306,508,11494,3.41,51.02,6.69,204005,53096,26.03,Americas,cluster0
+38,Comoros,354,7,328,19,565,665,566,1.98,92.66,2.13,334,20,5.99,Africa,cluster1
